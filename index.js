@@ -78,4 +78,4 @@ client.on('message', message => {
 		if (cmd) cmd.run(client, message, args);
 });
 
-client.login(token);
+client.login(process.env.TOKEN);
